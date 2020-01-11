@@ -45,7 +45,11 @@ class Song
   end
   
   def self.create_from_filename(filename)
+<<<<<<< HEAD
     new_from_filename(filename)
+=======
+    new_from_filename(filename).save
+>>>>>>> 15fa5b2959d9dc5a288eb0d5c564fecedd7587cc
   end
   
   def self.all

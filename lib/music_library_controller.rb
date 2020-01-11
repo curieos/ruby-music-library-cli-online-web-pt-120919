@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require "music_importer"
 
 class MusicLibraryController
@@ -86,5 +87,10 @@ class MusicLibraryController
     song_number = gets.strip.to_i
     sorted = Song.all.sort{ |a, b| a.name <=> b.name }
     puts "Playing #{sorted[song_number-1].name} by #{sorted[song_number-1].artist.name}" if song_number < sorted.length && song_number > 0
+=======
+def MusicLibraryController
+  def initialize(path)
+    @path = path
+>>>>>>> 15fa5b2959d9dc5a288eb0d5c564fecedd7587cc
   end
 end
